@@ -4,6 +4,8 @@ import { AuthenticateWithRedirectCallback, ClerkProvider } from '@clerk/react'
 import '@fontsource/alegreya/400.css'
 import '@fontsource/alegreya/400-italic.css'
 import '@fontsource/source-sans-3/400.css'
+import '@fontsource/source-sans-3/500.css'
+import '@fontsource/source-sans-3/600.css'
 import './index.css'
 import Root from './Root.jsx'
 
