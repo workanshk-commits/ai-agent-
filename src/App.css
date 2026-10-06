@@ -1024,10 +1024,16 @@
   place-items: center;
   border: 1.5px solid #000;
   border-radius: 50%;
-  background: #fff;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
+  background: transparent;
+}
+
+.avatar svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
 }
 
 .menu-button:focus-visible,

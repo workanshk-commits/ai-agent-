@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import { DEMO_PROFILE, initialOf } from './demoProfile'
+import { DEMO_PROFILE } from './demoProfile'
 
 const chatColors = [
   { name: 'Black', className: 'black', value: '#000000' },
@@ -554,7 +554,13 @@ export function App({ onSearch, userName } = {}) {
             setIsSidebarOpen(false)
           }}
         >
-          <div className="avatar" aria-hidden="true">{initialOf(DEMO_PROFILE.displayName)}</div>
+          <div className="avatar" aria-hidden="true">
+            <svg viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="15" />
+              <circle cx="18" cy="14" r="4.5" />
+              <path d="M8.5 28c1.4-5.1 4.8-7.6 9.5-7.6s8.1 2.5 9.5 7.6" />
+            </svg>
+          </div>
           <span>{DEMO_PROFILE.displayName}</span>
         </button>
       </aside>
