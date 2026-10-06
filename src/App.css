@@ -345,11 +345,12 @@
 .profile-screen {
   display: flex;
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - 80px);
   min-height: 100vh;
   min-height: 100svh;
   justify-content: center;
-  padding: 64px 24px 48px 104px;
+  margin-left: 80px;
+  padding: 64px 24px 48px;
   font-family: 'Source Sans 3', system-ui, sans-serif;
 }
 
@@ -464,7 +465,7 @@
 
 .profile-settings {
   display: flex;
-  width: min(100%, 550px);
+  width: min(100%, 666px);
   flex-direction: column;
   gap: 36px;
   margin: 0 auto;
@@ -1061,7 +1062,7 @@
   }
 
   .profile-screen {
-    padding: 88px 20px 32px 100px;
+    padding: 88px 20px 32px;
   }
 
   .profile-settings {
@@ -1101,6 +1102,12 @@
   }
 
   .library-screen {
+    width: calc(100% - 64px);
+    margin-left: 64px;
+    padding-inline: 16px;
+  }
+
+  .profile-screen {
     width: calc(100% - 64px);
     margin-left: 64px;
     padding-inline: 16px;
