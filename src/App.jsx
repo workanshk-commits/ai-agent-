@@ -37,7 +37,7 @@ export function App({ onSearch, userName } = {}) {
   const [isThemeOpen, setIsThemeOpen] = useState(false)
   const [theme, setTheme] = useState('Light')
   const [activeNavItem, setActiveNavItem] = useState('')
-  const [selectedChatColor, setSelectedChatColor] = useState(chatColors[1])
+  const [selectedChatColor, setSelectedChatColor] = useState(chatColors[5])
   const [profileValues, setProfileValues] = useState(/** @type {ProfileValues} */ ({
     name: DEMO_PROFILE.displayName,
     email: DEMO_PROFILE.email,
@@ -250,7 +250,7 @@ export function App({ onSearch, userName } = {}) {
           <button
             type="button"
             className="icon-button menu-button"
-            aria-label={isSidebarOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isProfileOpen ? 'Go to homepage' : isSidebarOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isSidebarOpen}
             aria-controls="app-sidebar"
             onClick={() => {
@@ -261,7 +261,7 @@ export function App({ onSearch, userName } = {}) {
                 return
               }
 
-              setIsSidebarOpen(!isSidebarOpen)
+              setIsSidebarOpen((open) => !open)
             }}
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
